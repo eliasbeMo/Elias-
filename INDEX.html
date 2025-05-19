@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333232;
+        }
+
+        /*Cabeçalho de navegação */
+        header {
+            background-color: #dd2424;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px;
+            background-color: rgb(255, 255, 255);
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(241, 239, 239);
+        }
+
+        /* Estilo do formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+        }
+
+        label {
+            margin: 15px 0 10px;
+        }
+
+        input, textarea {
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #f7f7f7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Cabeçalho com links para as seções-->
+    <header>
+
+        <h1>Bem-vindo ao meu Portfólio Pessoal</h1>
+        <nav>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- sobre mim -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Sou Elias Benício. Sou autista grau um, entrando no mundo da tecnologia.<br>
+        Amo ler e gosto de jogar xadrez.</p>
+    </section>
+
+    <!-- Sobre minha formação -->
+    <section id="formacao">
+        <h2>Formação Educacional</h2>
+        <p> Sou formado em Radiologia Médica. Estudo Ciência de Dados e Ciências Econômicas em faculdades diferentes.<br>
+        Faço alguns cursos por fora, como Python, SQL e Estatística.</p>
+        <p><strong>Idiomas:</strong> Português (nativo), Inglês (intermediário).</p>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <ul>
+            <li><a href="https://meusiteexemplo1.com" target="_blank">Projeto 1 - Site de Receitas</a></li>
+            <li><a href="https://meusiteexemplo2.com" target="_blank">Projeto 2 - Calculadora Online</a></li>
+            <li><a href="https://meusiteexemplo3.com" target="_blank">Projeto 3 - Blog Pessoal</a></li>
+        </ul>
+    </section>
+
+    <!-- Contato com formulário -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <!-- Campo de nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+            <!-- Campo de email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+
+            <!-- Campo de mensagem -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+
+            <!-- Botão de envio -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>
